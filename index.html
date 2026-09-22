@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Search millions of books by title or author and see covers, authors, and publication years. Powered by Open Library.">
+  <title>Book Search</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="inner">
+      <h1>Book search</h1>
+      <form id="search-form">
+        <label for="query" class="visually-hidden">Title or author</label>
+        <input id="query" type="search" placeholder="Search by title or author" autocomplete="off" required>
+        <button type="submit" id="search-button">Search</button>
+      </form>
+    </div>
+  </header>
+
+  <main>
+    <p id="message" role="status">Search for a book to get started.</p>
+    <ol id="results"></ol>
+    <button type="button" id="load-more" hidden>Load more</button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
